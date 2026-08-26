@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_modern_arkaplan"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="🏆 BAŞARI TABLOSU"
+        android:textColor="#F1C40F"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel_modern"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView android:id="@+id/tvOzetToplamOyun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginBottom="6dp"/>
+        <TextView android:id="@+id/tvOzetEnYuksek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#27AE60" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+        <TextView android:id="@+id/tvOzetOrtalama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginBottom="6dp"/>
+        <TextView android:id="@+id/tvOzetToplamKelime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginBottom="6dp"/>
+        <TextView android:id="@+id/tvOzetEnUzun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#F39C12" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+        <TextView android:id="@+id/tvOzetToplamSure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="16sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/llOyunListesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</LinearLayout>

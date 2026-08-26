@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_modern_arkaplan"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/llHTPHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel_modern"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="8dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📖 NASIL OYNANIR?"
+            android:textColor="#F1C40F"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llHTPHeader"
+        android:layout_above="@id/btnHTPGeri"
+        android:scrollbars="none"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/llHTPContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingBottom="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🕹️ Kelime Oluşturma" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Parmağınızı harfler üzerinde yatay, dikey veya çapraz sürükleyin. En az 3 harf birleştirerek geçerli bir kelime oluşturun." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎯 Hedefler ve Bonus" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tahta içerisinde gizlenmiş olan hedef kelimeleri bulun. Hedef kelimeler size 2 KAT PUAN kazandırır! Tüm hedefler bitince tahta yenilenir." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔥 Kombo Sistemi" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bir kelime içinde başka kelimeler de gizliyse kombo yaparsınız! Ne kadar uzun ve karmaşık kelime seçerseniz o kadar çok puan ve altın kazanırsınız." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✨ Uzun Kelime Ödülleri" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Uzun kelimeler kurarak harflere özel güçler kazandırabilir ve tahtayı daha hızlı temizleyebilirsiniz:" android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="• 4 Harf: Satır Silici (Tüm satırı yok eder)\n• 5 Harf: Bomba (3x3'lük alanı patlatır)\n• 6 Harf: Sütun Silici (Tüm sütunu yok eder)\n• 7+ Harf: Mega Bomba (5x5'lik dev alanı temizler)"
+                    android:textColor="#F1C40F" android:textSize="14sp" android:textStyle="bold" android:lineSpacingExtra="4dp" android:layout_marginBottom="12dp"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Özel güçler, o harfi bir kelimede kullandığınız an tetiklenir!"
+                    android:textColor="#BDC3C7" android:textSize="13sp" android:textStyle="italic"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHTPGeri"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_modern_yesil"
+        android:text="ANLADIM, BAŞLAYALIM!"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:elevation="6dp"/>
+
+</RelativeLayout>

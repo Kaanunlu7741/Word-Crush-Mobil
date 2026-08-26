@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_modern_arkaplan"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel_modern"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="8dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛒 MARKET"
+            android:textColor="#F1C40F"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvAltin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💰 Bakiye: 0 Altın"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐟 Balık" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <TextView android:id="@+id/tvMevcutBalik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x0" android:textColor="#F1C40F" android:textSize="18sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gridde rastgele harfleri yok eder ve üsttekiler aşağı düşer." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="#1A000000"
+                    android:layout_marginBottom="8dp">
+                    <GridLayout
+                        android:id="@+id/glFishSimMarket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:rowCount="3"
+                        android:columnCount="3"
+                        android:padding="4dp"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnFishWatch"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_modern_yesil"
+                        android:text="İZLE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnBalikAl"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_modern_yesil"
+                        android:text="SATIN AL (100 ALTIN)"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚔️ Işın Kılıcı" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <TextView android:id="@+id/tvMevcutIsinKilici" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x0" android:textColor="#F1C40F" android:textSize="18sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Seçilen harfin bulunduğu satır ve sütundaki tüm harfleri yok eder." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="#1A000000"
+                    android:layout_marginBottom="8dp">
+                    <GridLayout
+                        android:id="@+id/glIsinKiliciSimMarket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:rowCount="3"
+                        android:columnCount="3"
+                        android:padding="4dp"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnIsinKiliciWatch"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_modern_mor"
+                        android:text="İZLE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnIsinKiliciAl"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_modern_mor"
+                        android:text="SATIN AL (200 ALTIN)"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎯 Keskin Nişancı" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <TextView android:id="@+id/tvMevcutKeskinNisanci" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x0" android:textColor="#F1C40F" android:textSize="18sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Seçilen tek bir harfi nokta atışıyla yok eder." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="#1A000000"
+                    android:layout_marginBottom="8dp">
+                    <GridLayout
+                        android:id="@+id/glKeskinNisanciSimMarket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:rowCount="3"
+                        android:columnCount="3"
+                        android:padding="4dp"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnKeskinNisanciWatch"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_modern_turuncu"
+                        android:text="İZLE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnKeskinNisanciAl"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_modern_turuncu"
+                        android:text="SATIN AL (75 ALTIN)"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔄 Serbest Değiştirme" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <TextView android:id="@+id/tvMevcutDegistirme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x0" android:textColor="#F1C40F" android:textSize="18sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Birbirine temas eden iki harfin yerini değiştirir." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="#1A000000"
+                    android:layout_marginBottom="8dp">
+                    <GridLayout
+                        android:id="@+id/glSwapSimMarket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:rowCount="3"
+                        android:columnCount="3"
+                        android:padding="4dp"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSwapWatch"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_modern_yesil"
+                        android:text="İZLE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnDegistirmeAl"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_modern_yesil"
+                        android:text="SATIN AL (125 ALTIN)"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔀 Harf Karıştırma" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <TextView android:id="@+id/tvMevcutKaristirma" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x0" android:textColor="#F1C40F" android:textSize="18sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gridde bulunan tüm harfleri rastgele karıştırır." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="#1A000000"
+                    android:layout_marginBottom="8dp">
+                    <GridLayout
+                        android:id="@+id/glShuffleSimMarket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:rowCount="3"
+                        android:columnCount="3"
+                        android:padding="4dp"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnShuffleWatch"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_modern_mor"
+                        android:text="İZLE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnKaristirmaAl"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_modern_mor"
+                        android:text="SATIN AL (300 ALTIN)"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎉 Parti Güçlendiricisi" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <TextView android:id="@+id/tvMevcutParti" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x0" android:textColor="#F1C40F" android:textSize="18sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tüm harfleri yok eder ve yepyeni harfler düşmesini sağlar." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="#1A000000"
+                    android:layout_marginBottom="8dp">
+                    <GridLayout
+                        android:id="@+id/glPartySimMarket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:rowCount="3"
+                        android:columnCount="3"
+                        android:padding="4dp"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnPartyWatch"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_modern_turuncu"
+                        android:text="İZLE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnPartiAl"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_modern_turuncu"
+                        android:text="SATIN AL (400 ALTIN)"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_modern"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💡 İpucu" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <TextView android:id="@+id/tvMevcutIpucu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x0" android:textColor="#F1C40F" android:textSize="18sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hedef kelimelerden birini karıştırarak size ipucu verir." android:textColor="#BDC3C7" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="#1A000000"
+                    android:layout_marginBottom="8dp">
+                    <GridLayout
+                        android:id="@+id/glIpucuSimMarket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:rowCount="3"
+                        android:columnCount="3"
+                        android:padding="4dp"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnIpucuWatch"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/btn_modern_yesil"
+                        android:text="İZLE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnIpucuAl"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_modern_yesil"
+                        android:text="SATIN AL (150 ALTIN)"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMarketGeri"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_modern_yesil"
+        android:text="🎮 OYUNA DÖN"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:elevation="6dp"/>
+</LinearLayout>

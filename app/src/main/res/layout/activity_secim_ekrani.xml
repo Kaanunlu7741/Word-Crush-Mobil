@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_modern_arkaplan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="OYUN AYARLARI"
+            android:textColor="#F1C40F"
+            android:textSize="@dimen/selection_title_text_size"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAHTA BOYUTU"
+            android:textColor="#BDC3C7"
+            android:textSize="@dimen/selection_section_text_size"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBoyut6"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/selection_button_height"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_panel_modern"
+                android:text="6x6\n(Zor)"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBoyut8"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/selection_button_height"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_modern_turuncu"
+                android:text="8x8\n(Orta)"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBoyut10"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/selection_button_height"
+                android:layout_weight="1"
+                android:background="@drawable/bg_panel_modern"
+                android:text="10x10\n(Kolay)"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HAMLE SAYISI"
+            android:textColor="#BDC3C7"
+            android:textSize="@dimen/selection_section_text_size"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHamle15"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/selection_button_height"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_panel_modern"
+                android:text="15"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHamle20"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/selection_button_height"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_modern_mor"
+                android:text="20"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHamle25"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/selection_button_height"
+                android:layout_weight="1"
+                android:background="@drawable/bg_panel_modern"
+                android:text="25"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAHTA ÖNİZLEME"
+                android:textColor="#7F8C8D"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <GridLayout
+                android:id="@+id/glGridOnizleme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_panel_modern"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:useDefaultMargins="false"
+                android:alignmentMode="alignBounds"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOyunuBaslat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_modern_yesil"
+            android:text="OYUNU BAŞLAT"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:elevation="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAnaMenuyeDon"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_panel_modern"
+            android:text="ANA MENÜYE DÖN"
+            android:textColor="#BDC3C7"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
